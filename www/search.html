@@ -1,0 +1,27 @@
+<ion-view view-title="Buscar">
+<ion-content has-bouncing="false">
+
+<div class="padding">
+<div class="list list-inset" >
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Buscar no App.." ng-model="query">
+  </label>
+</div>
+</div>
+
+<div class="row" style="flex-wrap: wrap;">
+    <div class="col col-res-50" ng-repeat="item in recipes | filter: query">
+        <a class="item item-thumbnail-left item-light" href="#/tab/details/{{item.id}}">
+      <img src="img/{{item.image}}">
+      <h2>{{item.title}}</h2>
+      <p>
+  <i class="icon ion-android-notifications"></i> {{item.time_r}} Min &nbsp;
+  <i class="icon ion-android-people"></i> {{item.servings}} Porção&nbsp;
+  <i class="icon ion-android-star"></i> {{item.dificult}}<br/></p></p>
+    </a>
+    </div>
+    </div>
+
+</ion-content>
+</ion-view>

@@ -1,0 +1,50 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-admobpro": {
+            "PLAY_SERVICES_VERSION": "16.0.0",
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-admobsdk": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "cordova-plugin-extension": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.ionicframework.receitasproteicas752581"
+        }
+    }
+}

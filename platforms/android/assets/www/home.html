@@ -1,0 +1,42 @@
+<ion-view view-title="Receitas Proteicas">
+<ion-content has-bouncing="false">
+
+<ion-slide-box does-continue="true">
+<ion-slide ng-repeat="item in recipes | limitTo: 10">
+
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('img/{{item.image}}');">
+<div class="card-category">Para {{item.chef_name}}</div>
+<div class="card-description">
+  <h2>{{item.title}}</h2>
+  <p>
+  <i class="icon ion-android-notifications"></i> {{item.time_r}} Min &nbsp;
+  <i class="icon ion-android-people"></i> {{item.servings}} Porção&nbsp;
+  <i class="icon ion-android-star"></i> {{item.dificult}}<br/></p></p>
+</div>
+<a class="card-link" href="#/tab/details/{{item.id}}" ></a>
+</div>
+
+</ion-slide>
+</ion-slide-box>
+
+<div class="item item-icon-left assertive">
+<i class="icon ion-heart"></i>
+Recomendado pra você</div>
+
+
+<div class="row" style="flex-wrap: wrap;">
+    <div class="col col-res-50" ng-repeat="item in recipes | limitTo: 10">
+        <a class="item item-thumbnail-left item-light" href="#/tab/details/{{item.id}}">
+      <img src="img/{{item.image}}">
+      <h2>{{item.title}}</h2>
+      <p>
+        <i class="icon ion-android-notifications"></i> {{item.time_r}} Min &nbsp;
+        <i class="icon ion-android-people"></i> {{item.servings}} Porção&nbsp;
+        <i class="icon ion-android-star"></i> {{item.dificult}}<br/></p>
+    </a>
+    </div>
+</div>
+
+
+</ion-content>
+</ion-view>

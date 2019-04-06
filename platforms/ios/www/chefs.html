@@ -1,0 +1,16 @@
+<ion-view view-title="Chefs">
+<ion-content has-bouncing="false">
+
+<div class="row" style="flex-wrap: wrap;">
+    <div class="col col-res-50" ng-repeat="item in recipes | unique:'chef'" style="margin-bottom: 0;padding: 7px;">
+      <div class="default-div">
+      <a class="item item-icon-right" href="#/tab/profile/{{item.chef}}">
+      <h3>{{item.chef_name}}</h3>
+      <i class="icon ion-ios-arrow-right"></i>
+    </a>
+    </div>
+</div>
+</div>
+
+</ion-content>
+</ion-view>

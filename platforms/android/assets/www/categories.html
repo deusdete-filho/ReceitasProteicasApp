@@ -1,0 +1,17 @@
+<ion-view view-title="Categorias">
+<ion-content has-bouncing="false">
+
+<div class="row" style="flex-wrap: wrap;">
+    <div class="col col-50 col-res-33" ng-repeat="item in recipes | unique:'category'">
+      <div class="default-div">
+      <a href="#/tab/category/{{item.category}}">
+      <img src="img/{{item.thumbnail}}" class="full-image image-category">
+      <h2>{{item.category_name}}</h2>
+    </a>
+    </div>
+
+    </div>
+</div>
+
+</ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view view-title="Categorias">
+<ion-content has-bouncing="false">
+
+<div class="item assertive" ng-repeat="item in categories" ng-if="params.category==item.idcategory">
+Receitas em <b>{{item.cat_name}}</b>
+<p style="white-space: normal !important; margin-top: 10px;">{{item.summary}}</p>
+</div>
+
+<div class="row" style="flex-wrap: wrap;">
+    <div class="col col-res-50" ng-repeat="item in recipes" ng-if="params.category==item.category">
+        <a class="item item-thumbnail-left item-light" href="#/tab/details/{{item.id}}">
+      <img src="img/{{item.image}}">
+      <h2>{{item.title}}</h2>
+      <p>
+  <i class="icon ion-android-notifications"></i> {{item.time_r}} Min &nbsp;
+  <i class="icon ion-android-people"></i> {{item.servings}} Por.&nbsp;
+  <i class="icon ion-android-star"></i> {{item.dificult}}<br/></p></p>
+    </a>
+    </div>
+    </div>
+
+</ion-content>
+</ion-view>

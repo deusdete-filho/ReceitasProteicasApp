@@ -1,0 +1,28 @@
+<ion-view view-title="Objetivo">
+<ion-content has-bouncing="false">
+
+<div class="profile_bg" ng-repeat="item in chefs" ng-if="params.chef==item.idchef">
+  <h4>{{item.chef_name}}</h4>
+
+  <p>{{item.biography}}</p>
+</div>
+
+<div class="item assertive" ng-repeat="item in chefs" ng-if="params.chef==item.idchef">
+Receitas para <b>{{item.chef_name}}</b>
+</div>
+
+<div class="row" style="flex-wrap: wrap;">
+    <div class="col col-res-50" ng-repeat="item in recipes" ng-if="params.chef==item.chef">
+        <a class="item item-thumbnail-left item-light" href="#/tab/details/{{item.id}}">
+      <img src="img/{{item.image}}">
+      <h2>{{item.title}}</h2>
+      <p>
+  <i class="icon ion-android-notifications"></i> {{item.time_r}} Min &nbsp;
+  <i class="icon ion-android-people"></i> {{item.servings}} Porção&nbsp;
+  <i class="icon ion-android-star"></i> {{item.dificult}}<br/></p></p>
+    </a>
+    </div>
+    </div>
+
+</ion-content>
+</ion-view>
